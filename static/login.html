@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <form id="login">
+        <form id="login" action="home.html">    <!-- new action -->
             <p style="text-align: center; color: white; margin-bottom: 25px;">Welcome back, 
                 <br>your
                 <span style="color: yellow;">Moody Books</span> are waiting for you!! 
@@ -35,7 +35,7 @@
             </label>
             <div class="inputBox">
                 <div class="box">
-                    <input type="submit" value="log in">
+                    <input type="submit" value="log in" onclick="lsub()"> <!-- new event -->
                 </div>
             </div>
             <a href="change-password.html" class="forgot">Forgot Password</a>
@@ -97,6 +97,15 @@
                 icon.name = "eye";
             }
         }
+
+        // new event function
+        function lsub()
+        {
+            var naam = document.getElementById("username").value;
+            localStorage.setItem("id", naam);
+            return false;
+        }
+
     </script>
 
 
