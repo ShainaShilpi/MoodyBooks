@@ -1,6 +1,28 @@
 /* Navbar */
-
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#load {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #1e6cc7 center no-repeat url("../images/bookshelf.gif");
+    z-index: 9999;
+}
+#naaam
+{
+  height: 30px; 
+  text-align: center; 
+  background-color: black; 
+  color: white; 
+  top: 0px;
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 22px;
+  font-weight: 600;
+}
 html,
 body {
     margin: 0;

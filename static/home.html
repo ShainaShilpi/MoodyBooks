@@ -12,7 +12,12 @@
 
 <!-- ...........................Navigation Bar............................... -->
 
-<body>
+<body onload="setTimeout('merafunction()', 1000)">
+    <div id="load"></div>
+    <div id="naaam">  
+        <span>Hello!!</span>
+        <span id="teranaam"></span>
+    </div>
     <nav class="nav">
         <div class="container">
             <div class="logo">
@@ -175,6 +180,15 @@
     <!-- Jquery needed for navbar -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="assets/javascript/styles.js"></script>
+    <script>
+        var pre = document.getElementById("load");
+        function merafunction()
+        {
+          pre.style.display = "none";
+        }
+
+        document.getElementById("teranaam").innerHTML = localStorage.getItem("id");
+    </script>
 
     <!-- Function used to shrink nav bar removing paddings and adding black background -->
     <script>
@@ -187,7 +201,5 @@
             }
         });
     </script>
-
 </body>
-
 </html>
