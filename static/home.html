@@ -195,9 +195,11 @@
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
                 $('.nav').addClass('affix');
-                console.log("OK");
+                document.getElementById("naaam").style.display = "none";
+                // console.log("OK");
             } else {
                 $('.nav').removeClass('affix');
+                document.getElementById("naaam").style.display = "block";
             }
         });
     </script>
