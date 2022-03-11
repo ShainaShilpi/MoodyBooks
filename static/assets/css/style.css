@@ -56,7 +56,8 @@ body {
     float: left;
     width: auto;
     height: auto;
-    padding-left: 3rem;
+    /* padding-left: 3rem; */
+    padding-left: 0rem;
 }
 
 .nav div.logo a {
@@ -116,6 +117,58 @@ body {
     display: none;
 }
 
+.right
+{
+    position: absolute;
+    top: 88%;
+    left: 97%;
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 68px;
+    border-right: 6px dashed rgba(255, 255, 255, 0.1);
+}
+.arrow
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 40px;
+    width: 6px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    animation: animate 2s infinite;
+}
+.arrow::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: -6.8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border-bottom: 6px solid #fefe00;
+    border-right: 6px solid #fefe00;
+    transform: rotate(45deg);
+}
+@keyframes animate 
+{
+    0%
+    {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    50%
+    {
+        transform: translateY(34px);
+        opacity: 1;
+    }
+    100%
+    {
+        transform: translateY(68px);
+        opacity: 0;
+    }
+}
 
 /* Media qurey section */
 

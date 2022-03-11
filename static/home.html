@@ -21,14 +21,16 @@
     <nav class="nav">
         <div class="container">
             <div class="logo">
-                <a href="#">Your Logo</a>
+                <a href="home.html">Your Logo</a>
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
+                    <li><a href="#">Moods</a></li>
+                    <li><a href="#">Genre</a></li>
+                    <li><a href="#trending">Featured Books</a></li>
+                    <li><a href="#">Request a Book</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Logout</a></li>
                 </ul>
             </div>
             <span class="navTrigger">
@@ -43,14 +45,15 @@
         <section class="home" style="background-image: url('https://lamsonconsulting.com/wp-content/uploads/2019/09/aziz-acharki-277346-unsplash.jpg')">
             <div class="fade"></div>
         </section>
+        <div class="right">
+            <div class="arrow"></div>
+        </div>
     </div>
 
     <!-- ..........................Mood Checker Quiz........................ -->
 
     <section id="mood-checker-section">
-        <div style="
-          background-image: url(https://m.media-amazon.com/images/I/714sdCHaMvL._SX679_.jpg);
-        ">
+        <div style="background-image: url(https://m.media-amazon.com/images/I/714sdCHaMvL._SX679_.jpg);">
             <div id="mood-checker">
                 <div class="container text-center">
                     <div class="card" style="width: 40rem">
@@ -128,54 +131,56 @@
 
     <!-- ........................................Trending Books.............................. -->
 
-    <div class="trending-books">
-        <div class="row text-center">
-            <div class="col-md-3">
-                <a href="# ">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg" alt="" class="book-1-img" />
-                </a>
-                <a href="#" style="text-decoration: none">
-                    <h4>Book Name</h4>
-                </a>
-                <a href="#" style="text-decoration: none">
-                    <h5>Name of the Author</h5>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="# ">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg " alt="#" class="book-1-img" />
-                </a>
-                <a href="#" style="text-decoration: none">
-                    <h4>Book Name</h4>
-                </a>
-                <a href="#" style="text-decoration: none">
-                    <h5>Name of the Author</h5>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="# ">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg " alt="#" class="book-1-img" />
-                </a>
-                <a href="#" style="text-decoration: none">
-                    <h4>Book Name</h4>
-                </a>
-                <a href="#" style="text-decoration: none">
-                    <h5>Name of the Author</h5>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="# ">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg " alt="#" class="book-1-img" />
-                </a>
-                <a href="#" style="text-decoration: none">
-                    <h4>Book Name</h4>
-                </a>
-                <a href="#" style="text-decoration: none">
-                    <h5>Name of the Author</h5>
-                </a>
+    <section id="trending">
+        <div class="trending-books">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <a href="# ">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg" alt="" class="book-1-img" />
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <h4>Book Name</h4>
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <h5>Name of the Author</h5>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="# ">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg " alt="#" class="book-1-img" />
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <h4>Book Name</h4>
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <h5>Name of the Author</h5>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="# ">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg " alt="#" class="book-1-img" />
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <h4>Book Name</h4>
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <h5>Name of the Author</h5>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="# ">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg " alt="#" class="book-1-img" />
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <h4>Book Name</h4>
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <h5>Name of the Author</h5>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Jquery needed for navbar -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
