@@ -182,6 +182,9 @@
         </div>
     </section>
 
+    <!-- Back to top button -->
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+
     <!-- Jquery needed for navbar -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="assets/javascript/styles.js"></script>
@@ -206,6 +209,27 @@
                 $('.nav').removeClass('affix');
                 document.getElementById("naaam").style.display = "block";
             }
+        });
+        $('.navTrigger').click(function() {
+            $(this).toggleClass('active');
+            console.log("Clicked menu");
+            $("#mainListDiv").toggleClass("show_list");
+            $("#mainListDiv").fadeIn();
+
+        });
+        // back to top button
+        $(document).ready(function(){ 
+            $(window).scroll(function(){ 
+                if ($(this).scrollTop() > 100) { 
+                    $('#scroll').fadeIn(); 
+                } else { 
+                    $('#scroll').fadeOut(); 
+                } 
+            }); 
+            $('#scroll').click(function(){ 
+                $("html, body").animate({scrollTop: 0},100); 
+                return false; 
+            }); 
         });
     </script>
 </body>
