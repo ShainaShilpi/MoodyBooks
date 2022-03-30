@@ -63,9 +63,9 @@ git p
                         <div class="card-body">
                             <h5 class="card-title">Check your MOOD!!</h5>
                             <p class="card-text">
-                                convallis tellus id interdum velit laoreet id donec ultrices tincidunt arcu non sodales neque sodales
+                                Hello, Readers: Welcome to Moody Books, Don't know which emotion you have to read book, Check it out through our Mood Quiz
                             </p>
-                            <a href="#" class="btn btn-primary">Check</a>
+                            <a href="https://www.tryinteract.com/share/quiz/61fa97ab3d65d80018dd8771" class="btn btn-primary">Check</a>
                         </div>
                     </div>
                 </div>
@@ -138,56 +138,61 @@ git p
             <div class="row text-center">
                 <div class="col-md-3">
                     <a href="# ">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg" alt="" class="book-1-img" />
+                        <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348335194l/6391876.jpg" alt="" class="book-1-img" />
                     </a>
                     <a href="#" style="text-decoration: none">
-                        <h4>Book Name</h4>
+                        <h4>Big Leap</h4>
                     </a>
                     <a href="#" style="text-decoration: none">
-                        <h5>Name of the Author</h5>
+                        <h5>Gay Hendricks</h5>
                     </a>
                 </div>
                 <div class="col-md-3">
                     <a href="# ">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg " alt="#" class="book-1-img" />
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/71zNTPjajaL.jpg " alt="#" class="book-1-img" />
                     </a>
                     <a href="#" style="text-decoration: none">
-                        <h4>Book Name</h4>
+                        <h4>The Art of Happiness</h4>
                     </a>
                     <a href="#" style="text-decoration: none">
-                        <h5>Name of the Author</h5>
+                        <h5> Howard C. Cutler</h5>
                     </a>
                 </div>
                 <div class="col-md-3">
                     <a href="# ">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg " alt="#" class="book-1-img" />
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51WTp7hAmfL._SX324_BO1,204,203,200_.jpg" alt="#" class="book-1-img" />
                     </a>
                     <a href="#" style="text-decoration: none">
-                        <h4>Book Name</h4>
+                        <h4>Fahrenheit 451</h4>
                     </a>
                     <a href="#" style="text-decoration: none">
-                        <h5>Name of the Author</h5>
+                        <h5>Ray Bradbury</h5>
                     </a>
                 </div>
                 <div class="col-md-3">
                     <a href="# ">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg " alt="#" class="book-1-img" />
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/81IzbD2IiIL.jpg " alt="#" class="book-1-img" />
                     </a>
                     <a href="#" style="text-decoration: none">
-                        <h4>Book Name</h4>
+                        <h4>The Kite Runner</h4>
                     </a>
                     <a href="#" style="text-decoration: none">
-                        <h5>Name of the Author</h5>
+                        <h5>Khaled Hosseini</h5>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Back to top button -->
+    <a href="#" id="scroll" style="display: none;">
+        <span></span>
+    </a>
+
     <!-- Jquery needed for navbar -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="assets/javascript/styles.js"></script>
-    <script>
+    <script src="js/style.js"></script>
+    <!-- <script>
         var pre = document.getElementById("load");
 
         function merafunction() {
@@ -195,10 +200,10 @@ git p
         }
 
         document.getElementById("teranaam").innerHTML = localStorage.getItem("id");
-    </script>
+    </script> -->
 
     <!-- Function used to shrink nav bar removing paddings and adding black background -->
-    <script>
+    <!-- <script>
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
                 $('.nav').addClass('affix');
@@ -209,7 +214,28 @@ git p
                 document.getElementById("naaam").style.display = "block";
             }
         });
-    </script>
+        $('.navTrigger').click(function() {
+            $(this).toggleClass('active');
+            console.log("Clicked menu");
+            $("#mainListDiv").toggleClass("show_list");
+            $("#mainListDiv").fadeIn();
+
+        });
+        // back to top button
+        $(document).ready(function(){ 
+            $(window).scroll(function(){ 
+                if ($(this).scrollTop() > 100) { 
+                    $('#scroll').fadeIn(); 
+                } else { 
+                    $('#scroll').fadeOut(); 
+                } 
+            }); 
+            $('#scroll').click(function(){ 
+                $("html, body").animate({scrollTop: 0},100); 
+                return false; 
+            }); 
+        });
+    </script> -->
 </body>
 
 </html>
