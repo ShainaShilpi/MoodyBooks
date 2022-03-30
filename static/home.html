@@ -1,285 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      href=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css "
-      rel="stylesheet "
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC "
-      crossorigin="anonymous "
-    />
+    <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css " rel="stylesheet " integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC " crossorigin="anonymous " />
     <title>Moody Books</title>
-  </head>
+</head>
 
-  <!-- ...........................Navigation Bar............................... -->
+<!-- ...........................Navigation Bar............................... -->
 
-  <body>
-    <section id="navigation-bar">
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">MoodyBooks</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
-                    Moods
-                  </a>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDarkDropdownMenuLink"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Genres
-                  </a>
-                  <ul
-                    class="dropdown-menu dropdown-menu-dark"
-                    aria-labelledby="navbarDarkDropdownMenuLink"
-                  >
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Recommended Books</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Reviews</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
-                </li>
-
-                <button
-                  class="btn btn-signUp btn-outline-warning"
-                  type="submit"
-                >
-                  Sign Up
-                </button>
-              </ul>
-
-              <form class="d-flex">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-warning" type="submit">
-                  Search
-                </button>
-              </form>
+<body onload="setTimeout('merafunction()', 1000)">
+    <div id="load"></div>
+    <div id="naaam">  
+        <span>Hello!!</span>
+        <span id="teranaam"></span>
+    </div>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="home.html">Your Logo</a>
             </div>
-          </div>
-        </nav>
-      </header>
-    </section>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">Moods</a></li>
+                    <li><a href="#">Genre</a></li>
+                    <li><a href="#trending">Featured Books</a></li>
+                    <li><a href="#">Request a Book</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <div class="home-image">
+        <section class="home" style="background-image: url('https://lamsonconsulting.com/wp-content/uploads/2019/09/aziz-acharki-277346-unsplash.jpg')">
+            <div class="fade"></div>
+        </section>
+        <div class="right">
+            <div class="arrow"></div>
+        </div>
+    </div>
 
     <!-- ..........................Mood Checker Quiz........................ -->
 
     <section id="mood-checker-section">
-      <div
-        style="
-          background-image: url(https://m.media-amazon.com/images/I/714sdCHaMvL._SX679_.jpg);
-        "
-      >
-        <div id="mood-checker">
-          <div class="container text-center">
-            <div class="card" style="width: 18rem">
-              <img
-                src="https://www.ambius.com/blog/wp-content/uploads/2014/05/scents-mood-blog.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Check your MOOD!!</h5>
-                <p class="card-text">
-                  convallis tellus id interdum velit laoreet id donec ultrices
-                  tincidunt arcu non sodales neque sodales
-                </p>
-                <a href="#" class="btn btn-primary">Check</a>
-              </div>
+        <div style="background-image: url(https://m.media-amazon.com/images/I/714sdCHaMvL._SX679_.jpg);">
+            <div id="mood-checker">
+                <div class="container text-center">
+                    <div class="card" style="width: 40rem">
+                        <img src="https://www.ambius.com/blog/wp-content/uploads/2014/05/scents-mood-blog.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Check your MOOD!!</h5>
+                            <p class="card-text">
+                                convallis tellus id interdum velit laoreet id donec ultrices tincidunt arcu non sodales neque sodales
+                            </p>
+                            <a href="#" class="btn btn-primary">Check</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- ...............................Mood Dialogue Box........................... -->
 
     <!-- ...................................Moods............................. -->
     <div class="moods">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div id="moody">
-              <div class="card bg-custom-1" style="width: 18rem">
-                <img
-                  src="https://images.theconversation.com/files/304963/original/file-20191203-66982-1rzdvz4.jpg?ixlib=rb-1.1.0&rect=31%2C71%2C5330%2C2665&q=45&auto=format&w=1356&h=668&fit=crop"
-                  class="card-img-top"
-                  alt="Happy"
-                />
-                <span class="centered">Happy</span>
-              </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="moody">
+                        <div class="card bg-custom-1">
+                            <img src="https://images.theconversation.com/files/304963/original/file-20191203-66982-1rzdvz4.jpg?ixlib=rb-1.1.0&rect=31%2C71%2C5330%2C2665&q=45&auto=format&w=1356&h=668&fit=crop" class="card-img-top" alt="Happy" />
+                            <span class="centered">Happy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="moody">
+                        <div class="card">
+                            <img src="https://www.grxstatic.com/4f3rgqwzdznj/6DCpMgsCbG4eJXtSN7lrrz/6f4412786a1be398fd7912fcf9406dbc/GettyImages-1064120002.jpg?format=pjpg&auto=webp&width=704" class="card-img-top" alt="Sad" />
+                            <span class="centered">Sad</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="moody">
+                        <div class="card">
+                            <img src="https://www.apa.org/images/recognize-anger-title-image_tcm7-240767.jpg" class="card-img-top" alt="Angry" />
+                            <span class="centered">Angry</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="moody">
+                        <div class="card">
+                            <img src="https://media.glamour.com/photos/5696cdde01ed531c6f006c71/master/w_1600%2Cc_limit/sex-love-life-blogs-smitten-2012-07-06-0706-couple-snuggle-sm.jpg" class="card-img-top" alt="Lust" />
+                            <span class="centered">Lust</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="moody">
+                        <div class="card">
+                            <img src="https://www.psychologicalscience.org/redesign/wp-content/uploads/2016/12/PAFF_121516_angerdisgustmorality-1024x585.jpg" class="card-img-top" alt="Lol" />
+                            <span class="centered">Unpredictable</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="moody">
+                        <div class="card">
+                            <img src="https://www.allbusiness.com/asset/2017/06/Surprised-girl-in-the-shop.jpg" class="card-img-top" alt="Surprise" />
+                            <span class="centered">Surprise me</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div id="moody">
-              <div class="card" style="width: 18rem">
-                <img
-                  src="https://www.grxstatic.com/4f3rgqwzdznj/6DCpMgsCbG4eJXtSN7lrrz/6f4412786a1be398fd7912fcf9406dbc/GettyImages-1064120002.jpg?format=pjpg&auto=webp&width=704"
-                  class="card-img-top"
-                  alt="Sad"
-                />
-                <span class="centered">Sad</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div id="moody">
-              <div class="card" style="width: 18rem">
-                <img
-                  src="https://www.apa.org/images/recognize-anger-title-image_tcm7-240767.jpg"
-                  class="card-img-top"
-                  alt="Angry"
-                />
-                <span class="centered">Angry</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div id="moody">
-              <div class="card" style="width: 18rem">
-                <img
-                  src="https://media.glamour.com/photos/5696cdde01ed531c6f006c71/master/w_1600%2Cc_limit/sex-love-life-blogs-smitten-2012-07-06-0706-couple-snuggle-sm.jpg"
-                  class="card-img-top"
-                  alt="Lust"
-                />
-                <span class="centered">Lust</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div id="moody">
-              <div class="card" style="width: 18rem">
-                <img
-                  src="https://www.psychologicalscience.org/redesign/wp-content/uploads/2016/12/PAFF_121516_angerdisgustmorality-1024x585.jpg"
-                  class="card-img-top"
-                  alt="Lol"
-                />
-                <span class="centered">Unpredictable</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div id="moody">
-              <div class="card" style="width: 18rem">
-                <img
-                  src="https://www.allbusiness.com/asset/2017/06/Surprised-girl-in-the-shop.jpg"
-                  class="card-img-top"
-                  alt="Surprise"
-                />
-                <span class="centered">Surprise me</span>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <!-- ........................................Trending Books.............................. -->
 
-    <div class="trending-books">
-      <div class="row text-center">
-        <div class="col-md-3">
-          <a href="#">
-            <img
-              src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg"
-              alt=""
-              class="book-1-img"
-            />
-          </a>
-          <a href="#" style="text-decoration: none">
-            <h4>Book Name</h4>
-          </a>
-          <a href="#" style="text-decoration: none">
-            <h5>Name of the Author</h5>
-          </a>
+    <section id="trending">
+        <div class="trending-books">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <a href="# ">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg" alt="" class="book-1-img" />
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <h4>Book Name</h4>
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <h5>Name of the Author</h5>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="# ">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg " alt="#" class="book-1-img" />
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <h4>Book Name</h4>
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <h5>Name of the Author</h5>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="# ">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg " alt="#" class="book-1-img" />
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <h4>Book Name</h4>
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <h5>Name of the Author</h5>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="# ">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg " alt="#" class="book-1-img" />
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <h4>Book Name</h4>
+                    </a>
+                    <a href="#" style="text-decoration: none">
+                        <h5>Name of the Author</h5>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="col-md-3">
-          <a href="# ">
-            <img
-              src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg "
-              alt=" "
-              class="book-1-img"
-            />
-          </a>
-          <a href="#" style="text-decoration: none">
-            <h4>Book Name</h4>
-          </a>
-          <a href="#" style="text-decoration: none">
-            <h5>Name of the Author</h5>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="# ">
-            <img
-              src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg "
-              alt=" "
-              class="book-1-img"
-            />
-          </a>
-          <a href="#" style="text-decoration: none">
-            <h4>Book Name</h4>
-          </a>
-          <a href="#" style="text-decoration: none">
-            <h5>Name of the Author</h5>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="# ">
-            <img
-              src="https://images-na.ssl-images-amazon.com/images/I/81GK80Nv+tS.jpg "
-              alt=" "
-              class="book-1-img"
-            />
-          </a>
-          <a href="#" style="text-decoration: none">
-            <h4>Book Name</h4>
-          </a>
-          <a href="#" style="text-decoration: none">
-            <h5>Name of the Author</h5>
-          </a>
-        </div>
-      </div>
-    </div>
-  </body>
+    </section>
+
+    <!-- Jquery needed for navbar -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/javascript/styles.js"></script>
+    <script>
+        var pre = document.getElementById("load");
+        function merafunction()
+        {
+          pre.style.display = "none";
+        }
+
+        document.getElementById("teranaam").innerHTML = localStorage.getItem("id");
+    </script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                document.getElementById("naaam").style.display = "none";
+                // console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+                document.getElementById("naaam").style.display = "block";
+            }
+        });
+    </script>
+</body>
 </html>

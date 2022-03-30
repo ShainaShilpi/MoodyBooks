@@ -66,7 +66,7 @@ app.post('/api/login', async (req, res) =>
         return res.json({status: 'ok', data: token});
     }
 
-    res.json({status: 'error', error: 'Invalid Username/Password'});
+    res.json({status: 'error', error: 'Stay calm and enter the correct Username/Password !!'});
 });
 
 
