@@ -183,12 +183,14 @@
     </section>
 
     <!-- Back to top button -->
-    <a href="#" id="scroll" style="display: none;"><span></span></a>
+    <a href="#" id="scroll" style="display: none;">
+        <span></span>
+    </a>
 
     <!-- Jquery needed for navbar -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="assets/javascript/styles.js"></script>
-    <script>
+    <script src="js/style.js"></script>
+    <!-- <script>
         var pre = document.getElementById("load");
         function merafunction()
         {
@@ -196,10 +198,10 @@
         }
 
         document.getElementById("teranaam").innerHTML = localStorage.getItem("id");
-    </script>
+    </script> -->
 
     <!-- Function used to shrink nav bar removing paddings and adding black background -->
-    <script>
+    <!-- <script>
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
                 $('.nav').addClass('affix');
@@ -231,6 +233,6 @@
                 return false; 
             }); 
         });
-    </script>
+    </script> -->
 </body>
 </html>
